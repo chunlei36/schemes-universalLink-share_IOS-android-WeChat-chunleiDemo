@@ -25,7 +25,7 @@ $(document).ready(function() {
 		kind2 = 'gd'
 	}
 //获取后台数据的接口
-	var shareActivityUrl = "https://edian.guoanshequ.wang/index.php?com=com_appService&method=appSev&app_com=appshare&task=share&id=" + param + "&kind=" + kind2
+	var shareActivityUrl = "https://xxxx&id=" + param + "&kind=" + kind2
 	$.ajax({
 		type: "get",
 		url: shareActivityUrl,
