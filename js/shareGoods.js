@@ -185,8 +185,7 @@ $(document).ready(function() {
 	if(kind === "sd") {
 		kind2 = 'gd'
 	}
-
-	var shareGoodsUrl = 'https://edian.guoanshequ.wang/index.php?com=com_appService&method=appSev&app_com=appshare&task=share&id=' + param + '&kind=' + kind2;
+	var shareGoodsUrl = "https://xxxx&id=" + param + "&kind=" + kind2
 	$.ajax({
 		type: "get",
 		url: shareGoodsUrl,
