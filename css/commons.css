@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'PingFangSC';
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+.clearfloat:after{
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	overflow: hidden;
+	zoom: 0;
+}
+article{
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	
+}
+#zz_background{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10000;
+	
+}
+#zz_background img{
+	width: 20%;
+	/*float: right;*/
+	position: absolute;
+	right: 0;
+	
+}
+
+#zz_background span{
+
+	font-size: 4rem;
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	right: 20%;
+}
+
+
+
+#zz_background2{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10000;
+	
+}
+#zz_background2 img{
+	width: 20%;
+	/*float: right;*/
+	position: absolute;
+	right: 0;
+	
+}
+
+#zz_background2 span{
+
+	font-size: 4rem;
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	right: 20%;
+}
