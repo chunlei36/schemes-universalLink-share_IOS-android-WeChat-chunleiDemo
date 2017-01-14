@@ -51,11 +51,11 @@ $(document).ready(function() {
 	}
 //	ios9以下以及安卓的启动方式为  schemes
 	var $ios9_lev = "guoanshequ://" + kind2 + "$." + param; //app程序协议，可对应调取打开相应app  
-	var $android_url = "launcher://com.guoan.app/" + kind2 + "$." + param;
+	var $android_url = "launcher://com.xxx.app/" + kind2 + "$." + param;
 //	启动微信商城
-	var $wx_url = "http://wx.guoanshequ.ren/dev-wx_js_bundle/a/share.php?param=/product/" + param + "/shared"
+	var $wx_url = "http://wx" + param + "/shared"
 //	ios9以上通过universal_link启动app，主要配置组要ios程序猿完成
-	var $universal_link = "https://download.guoanshequ.com/download.html?" + kind2 + "$." + param;
+	var $universal_link = "https://download.html?" + kind2 + "$." + param;
 	$('.download_gasq').attr('href', $universal_link)
 	if(/android/i.test(navigator.userAgent)) {
 		//android端  
@@ -71,7 +71,7 @@ $(document).ready(function() {
 				setTimeout(function() {
 					if(Date.now() - t < 1200) {
 						//没有安装app跳转到下载页面
-						location.href = 'https://download.guoanshequ.com/share.html';
+						location.href = 'https://download.com/share.html';
 					}
 				}, 1000);
 				return false;
@@ -82,7 +82,7 @@ $(document).ready(function() {
 				setTimeout(function() {
 					if(Date.now() - t < 1200) {
 						//没有安装app跳转到下载页面
-						location.href = 'https://download.guoanshequ.com/share.html';
+						location.href = 'https://download.com/share.html';
 					}
 				}, 1000);
 				return false;
@@ -128,7 +128,7 @@ $(document).ready(function() {
 					setTimeout(function() {
 						if(Date.now() - t < 3200) {
 							//没有安装app跳转到下载页面
-							location.href = 'https://download.guoanshequ.com/share.html';
+							location.href = 'https://download.com/share.html';
 						}
 					}, 3000);
 					// return false;
@@ -139,7 +139,7 @@ $(document).ready(function() {
 					setTimeout(function() {
 						if(Date.now() - t < 3200) {
 							//没有安装app跳转到下载页面
-							location.href = 'https://download.guoanshequ.com/share.html';
+							location.href = 'https://download.com/share.html';
 						}
 					}, 3000);
 					// return false;
