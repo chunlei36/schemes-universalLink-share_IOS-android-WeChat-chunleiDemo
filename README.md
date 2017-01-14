@@ -17,7 +17,7 @@ schemes-universalLink-share_IOS/android/WeChat-chunleiDemo
 /*
 注意：
     和Web端的同学一开始怎么也搞不定点击按钮跳转，找了好久终于发现为了提高手机端Web页面的点击响应速度，我们的Web端默认是使用touch事件来代替click的，但是在Universal Links的跳转中必须使用click。 
-    另外，页面初始页和要跳转的页的域名必须是不同的，否则这个跳转事件也不会调起对应的App！（曾经本人陷入此坑不能自拔，说多了都是泪。）另外，在进行Universal Links的调试时，建议先删除App，然后重新编译，运行。
+    另外，页面初始页和要跳转的页的域名必须是不同的，否则这个跳转事件也不会调起对应的App！（曾经本人陷入此坑不能自拔，哎！说多了都是泪）另外，在进行Universal Links的调试时，建议先删除App，然后重新编译，运行。
 */
 	var $universal_link = universal_link;
 if(/android/i.test(navigator.userAgent)) {
